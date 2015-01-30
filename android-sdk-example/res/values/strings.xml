@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AnyMote SDK Example</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	
+    <string name="start_scan">START BLE SCAN</string>
+    <string name="stop_scan">STOP SCAN</string>
+    <string name="scanning">scanning for anymote devices...</string>
+    <string name="found_devices">DISCOVERED DEVICES</string>
+    <string name="saved_devices">SAVED DEVICES</string>
+    
+    <string name="sam_vol_up">Sam Vol UP</string>
+    <string name="sam_vol_down">Sam Vol DN</string>
+    <string name="sam_ch_up">Sam Ch UP</string>
+    <string name="sam_ch_down">Sam Ch DN</string>
+    <string name="lg_vol_up">LG Vol UP</string>
+    <string name="lg_vol_down">LG Vol DOWN</string>
+    <string name="lg_ch_up">LG Ch UP</string>
+    <string name="lg_ch_down">LG Ch DOWN</string>
+    <string name="learn">Learn Command</string>
+    <string name="send_learned">Send Learned Command</string>
+    <string name="save">Save to storage</string>
+    <string name="delete">Delete from storage</string>
+</resources>

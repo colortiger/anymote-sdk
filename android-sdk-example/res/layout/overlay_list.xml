@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D000"
+    android:padding="18dip"
+>
+	<Button 
+	    android:id="@+id/button"
+		android:layout_width="match_parent"
+		android:layout_height="50dip"
+		android:text="close"    
+		android:layout_alignParentBottom="true"
+	/>
+	<ListView 
+	    android:id="@+id/listView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFF"
+		android:layout_above="@id/button"
+		android:layout_margin="5dip"
+	/>
+</RelativeLayout>
