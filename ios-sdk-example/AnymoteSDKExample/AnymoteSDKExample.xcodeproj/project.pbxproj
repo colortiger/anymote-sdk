@@ -1,0 +1,919 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2802C89B1A7B98050027F09D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802C89A1A7B98050027F09D /* main.m */; };
+		2802C89E1A7B98050027F09D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802C89D1A7B98050027F09D /* AppDelegate.m */; };
+		2802C8A11A7B98050027F09D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802C8A01A7B98050027F09D /* ViewController.m */; };
+		2802C8A61A7B98050027F09D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2802C8A51A7B98050027F09D /* Images.xcassets */; };
+		2802C8A91A7B98050027F09D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2802C8A71A7B98050027F09D /* LaunchScreen.xib */; };
+		2802C8B51A7B98050027F09D /* AnymoteSDKExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802C8B41A7B98050027F09D /* AnymoteSDKExampleTests.m */; };
+		285801E61A7F8B920096F29E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285801E51A7F8B920096F29E /* ViewController.xib */; };
+		285801E81A7F912C0096F29E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285801E71A7F912C0096F29E /* CoreBluetooth.framework */; };
+		285802351A7F91620096F29E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 285801EB1A7F91620096F29E /* .gitignore */; };
+		285802361A7F91620096F29E /* CocoaAsyncSocket.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 285801EC1A7F91620096F29E /* CocoaAsyncSocket.podspec */; };
+		285802371A7F91620096F29E /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 285801EE1A7F91620096F29E /* Documentation.html */; };
+		285802381A7F91620096F29E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 285801F01A7F91620096F29E /* GCDAsyncSocket.m */; };
+		285802391A7F91620096F29E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 285801F21A7F91620096F29E /* GCDAsyncUdpSocket.m */; };
+		2858023A1A7F91620096F29E /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 285802111A7F91620096F29E /* README.markdown */; };
+		2858023B1A7F91620096F29E /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 285802141A7F91620096F29E /* AsyncSocket.m */; };
+		2858023C1A7F91620096F29E /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 285802161A7F91620096F29E /* AsyncUdpSocket.m */; };
+		2858023D1A7F91620096F29E /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 285802171A7F91620096F29E /* Documentation.html */; };
+		2858023E1A7F91620096F29E /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 285802231A7F91620096F29E /* DDAbstractDatabaseLogger.m */; };
+		2858023F1A7F91620096F29E /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 285802251A7F91620096F29E /* DDASLLogger.m */; };
+		285802401A7F91620096F29E /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 285802271A7F91620096F29E /* DDFileLogger.m */; };
+		285802411A7F91620096F29E /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2858022A1A7F91620096F29E /* DDLog.m */; };
+		285802421A7F91620096F29E /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2858022C1A7F91620096F29E /* DDTTYLogger.m */; };
+		285802431A7F91620096F29E /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2858022F1A7F91620096F29E /* DDContextFilterLogFormatter.m */; };
+		285802441A7F91620096F29E /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 285802311A7F91620096F29E /* DDDispatchQueueLogFormatter.m */; };
+		285802451A7F91620096F29E /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 285802331A7F91620096F29E /* DDMultiFormatter.m */; };
+		285802461A7F91620096F29E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285802341A7F91620096F29E /* README.txt */; };
+		285802561A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 285802551A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2802C8AF1A7B98050027F09D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2802C88D1A7B98050027F09D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2802C8941A7B98050027F09D;
+			remoteInfo = AnymoteSDKExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2802C8951A7B98050027F09D /* AnymoteSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnymoteSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2802C8991A7B98050027F09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2802C89A1A7B98050027F09D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2802C89C1A7B98050027F09D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2802C89D1A7B98050027F09D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2802C89F1A7B98050027F09D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2802C8A01A7B98050027F09D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2802C8A51A7B98050027F09D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2802C8A81A7B98050027F09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2802C8AE1A7B98050027F09D /* AnymoteSDKExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnymoteSDKExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2802C8B31A7B98050027F09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2802C8B41A7B98050027F09D /* AnymoteSDKExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnymoteSDKExampleTests.m; sourceTree = "<group>"; };
+		285801E01A7F8B6A0096F29E /* Anymote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Anymote.h; sourceTree = "<group>"; };
+		285801E11A7F8B6A0096F29E /* AnymoteDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnymoteDevice.h; sourceTree = "<group>"; };
+		285801E21A7F8B6A0096F29E /* AnymoteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnymoteManager.h; sourceTree = "<group>"; };
+		285801E51A7F8B920096F29E /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		285801E71A7F912C0096F29E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		285801EB1A7F91620096F29E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		285801EC1A7F91620096F29E /* CocoaAsyncSocket.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CocoaAsyncSocket.podspec; sourceTree = "<group>"; };
+		285801EE1A7F91620096F29E /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		285801EF1A7F91620096F29E /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		285801F01A7F91620096F29E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		285801F11A7F91620096F29E /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		285801F21A7F91620096F29E /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		285802111A7F91620096F29E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		285802131A7F91620096F29E /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		285802141A7F91620096F29E /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		285802151A7F91620096F29E /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		285802161A7F91620096F29E /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		285802171A7F91620096F29E /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		285802221A7F91620096F29E /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		285802231A7F91620096F29E /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		285802241A7F91620096F29E /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		285802251A7F91620096F29E /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		285802261A7F91620096F29E /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		285802271A7F91620096F29E /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		285802281A7F91620096F29E /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		285802291A7F91620096F29E /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		2858022A1A7F91620096F29E /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		2858022B1A7F91620096F29E /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		2858022C1A7F91620096F29E /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		2858022E1A7F91620096F29E /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		2858022F1A7F91620096F29E /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		285802301A7F91620096F29E /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		285802311A7F91620096F29E /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		285802321A7F91620096F29E /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		285802331A7F91620096F29E /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		285802341A7F91620096F29E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		285802551A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAnymoteSDK-release-0.1.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2802C8921A7B98050027F09D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285802561A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a in Frameworks */,
+				285801E81A7F912C0096F29E /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2802C8AB1A7B98050027F09D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2802C88C1A7B98050027F09D = {
+			isa = PBXGroup;
+			children = (
+				285801E71A7F912C0096F29E /* CoreBluetooth.framework */,
+				285801E91A7F91620096F29E /* 3rd Party */,
+				2802C8971A7B98050027F09D /* AnymoteSDKExample */,
+				2802C8B11A7B98050027F09D /* AnymoteSDKExampleTests */,
+				2802C8961A7B98050027F09D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2802C8961A7B98050027F09D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2802C8951A7B98050027F09D /* AnymoteSDKExample.app */,
+				2802C8AE1A7B98050027F09D /* AnymoteSDKExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2802C8971A7B98050027F09D /* AnymoteSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				285801DE1A7F8B6A0096F29E /* anymote-sdk */,
+				2802C89C1A7B98050027F09D /* AppDelegate.h */,
+				2802C89D1A7B98050027F09D /* AppDelegate.m */,
+				2802C89F1A7B98050027F09D /* ViewController.h */,
+				2802C8A01A7B98050027F09D /* ViewController.m */,
+				285801E51A7F8B920096F29E /* ViewController.xib */,
+				2802C8A51A7B98050027F09D /* Images.xcassets */,
+				2802C8A71A7B98050027F09D /* LaunchScreen.xib */,
+				2802C8981A7B98050027F09D /* Supporting Files */,
+			);
+			path = AnymoteSDKExample;
+			sourceTree = "<group>";
+		};
+		2802C8981A7B98050027F09D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2802C8991A7B98050027F09D /* Info.plist */,
+				2802C89A1A7B98050027F09D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2802C8B11A7B98050027F09D /* AnymoteSDKExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				2802C8B41A7B98050027F09D /* AnymoteSDKExampleTests.m */,
+				2802C8B21A7B98050027F09D /* Supporting Files */,
+			);
+			path = AnymoteSDKExampleTests;
+			sourceTree = "<group>";
+		};
+		2802C8B21A7B98050027F09D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2802C8B31A7B98050027F09D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		285801DE1A7F8B6A0096F29E /* anymote-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				285801DF1A7F8B6A0096F29E /* Headers */,
+				285802551A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a */,
+			);
+			path = "anymote-sdk";
+			sourceTree = "<group>";
+		};
+		285801DF1A7F8B6A0096F29E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				285801E01A7F8B6A0096F29E /* Anymote.h */,
+				285801E11A7F8B6A0096F29E /* AnymoteDevice.h */,
+				285801E21A7F8B6A0096F29E /* AnymoteManager.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		285801E91A7F91620096F29E /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				285801EA1A7F91620096F29E /* CocoaAsyncSocket-master */,
+			);
+			path = "3rd Party";
+			sourceTree = "<group>";
+		};
+		285801EA1A7F91620096F29E /* CocoaAsyncSocket-master */ = {
+			isa = PBXGroup;
+			children = (
+				285801EB1A7F91620096F29E /* .gitignore */,
+				285801EC1A7F91620096F29E /* CocoaAsyncSocket.podspec */,
+				285801ED1A7F91620096F29E /* GCD */,
+				285802111A7F91620096F29E /* README.markdown */,
+				285802121A7F91620096F29E /* RunLoop */,
+				285802201A7F91620096F29E /* Vendor */,
+			);
+			path = "CocoaAsyncSocket-master";
+			sourceTree = "<group>";
+		};
+		285801ED1A7F91620096F29E /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				285801EE1A7F91620096F29E /* Documentation.html */,
+				285801EF1A7F91620096F29E /* GCDAsyncSocket.h */,
+				285801F01A7F91620096F29E /* GCDAsyncSocket.m */,
+				285801F11A7F91620096F29E /* GCDAsyncUdpSocket.h */,
+				285801F21A7F91620096F29E /* GCDAsyncUdpSocket.m */,
+				285801F31A7F91620096F29E /* Xcode */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		285801F31A7F91620096F29E /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				285801F41A7F91620096F29E /* BonjourClient */,
+				285801F51A7F91620096F29E /* BonjourServer */,
+				285801F61A7F91620096F29E /* ConnectTest */,
+				285801FB1A7F91620096F29E /* EchoServer */,
+				285801FC1A7F91620096F29E /* SimpleHTTPClient */,
+				285802011A7F91620096F29E /* TestPreBuffer */,
+				285802071A7F91620096F29E /* UdpEchoClient */,
+				2858020C1A7F91620096F29E /* UdpEchoServer */,
+			);
+			path = Xcode;
+			sourceTree = "<group>";
+		};
+		285801F41A7F91620096F29E /* BonjourClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BonjourClient;
+			sourceTree = "<group>";
+		};
+		285801F51A7F91620096F29E /* BonjourServer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BonjourServer;
+			sourceTree = "<group>";
+		};
+		285801F61A7F91620096F29E /* ConnectTest */ = {
+			isa = PBXGroup;
+			children = (
+				285801F71A7F91620096F29E /* Desktop */,
+				285801F91A7F91620096F29E /* Mobile */,
+			);
+			path = ConnectTest;
+			sourceTree = "<group>";
+		};
+		285801F71A7F91620096F29E /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				285801F81A7F91620096F29E /* ConnectTest */,
+			);
+			path = Desktop;
+			sourceTree = "<group>";
+		};
+		285801F81A7F91620096F29E /* ConnectTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ConnectTest;
+			sourceTree = "<group>";
+		};
+		285801F91A7F91620096F29E /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				285801FA1A7F91620096F29E /* ConnectTest */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		285801FA1A7F91620096F29E /* ConnectTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ConnectTest;
+			sourceTree = "<group>";
+		};
+		285801FB1A7F91620096F29E /* EchoServer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EchoServer;
+			sourceTree = "<group>";
+		};
+		285801FC1A7F91620096F29E /* SimpleHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				285801FD1A7F91620096F29E /* Desktop */,
+				285801FF1A7F91620096F29E /* Mobile */,
+			);
+			path = SimpleHTTPClient;
+			sourceTree = "<group>";
+		};
+		285801FD1A7F91620096F29E /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				285801FE1A7F91620096F29E /* SimpleHTTPClient */,
+			);
+			path = Desktop;
+			sourceTree = "<group>";
+		};
+		285801FE1A7F91620096F29E /* SimpleHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SimpleHTTPClient;
+			sourceTree = "<group>";
+		};
+		285801FF1A7F91620096F29E /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				285802001A7F91620096F29E /* SimpleHTTPClient */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		285802001A7F91620096F29E /* SimpleHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SimpleHTTPClient;
+			sourceTree = "<group>";
+		};
+		285802011A7F91620096F29E /* TestPreBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				285802021A7F91620096F29E /* Desktop */,
+				285802041A7F91620096F29E /* Mobile */,
+				285802061A7F91620096F29E /* Shared */,
+			);
+			path = TestPreBuffer;
+			sourceTree = "<group>";
+		};
+		285802021A7F91620096F29E /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				285802031A7F91620096F29E /* TestPreBuffer */,
+			);
+			path = Desktop;
+			sourceTree = "<group>";
+		};
+		285802031A7F91620096F29E /* TestPreBuffer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestPreBuffer;
+			sourceTree = "<group>";
+		};
+		285802041A7F91620096F29E /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				285802051A7F91620096F29E /* TestPreBuffer */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		285802051A7F91620096F29E /* TestPreBuffer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestPreBuffer;
+			sourceTree = "<group>";
+		};
+		285802061A7F91620096F29E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		285802071A7F91620096F29E /* UdpEchoClient */ = {
+			isa = PBXGroup;
+			children = (
+				285802081A7F91620096F29E /* Desktop */,
+				2858020A1A7F91620096F29E /* Mobile */,
+			);
+			path = UdpEchoClient;
+			sourceTree = "<group>";
+		};
+		285802081A7F91620096F29E /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				285802091A7F91620096F29E /* UdpEchoClient */,
+			);
+			path = Desktop;
+			sourceTree = "<group>";
+		};
+		285802091A7F91620096F29E /* UdpEchoClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UdpEchoClient;
+			sourceTree = "<group>";
+		};
+		2858020A1A7F91620096F29E /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				2858020B1A7F91620096F29E /* UdpEchoClient */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		2858020B1A7F91620096F29E /* UdpEchoClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UdpEchoClient;
+			sourceTree = "<group>";
+		};
+		2858020C1A7F91620096F29E /* UdpEchoServer */ = {
+			isa = PBXGroup;
+			children = (
+				2858020D1A7F91620096F29E /* Desktop */,
+				2858020F1A7F91620096F29E /* Mobile */,
+			);
+			path = UdpEchoServer;
+			sourceTree = "<group>";
+		};
+		2858020D1A7F91620096F29E /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				2858020E1A7F91620096F29E /* UdpEchoServer */,
+			);
+			path = Desktop;
+			sourceTree = "<group>";
+		};
+		2858020E1A7F91620096F29E /* UdpEchoServer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UdpEchoServer;
+			sourceTree = "<group>";
+		};
+		2858020F1A7F91620096F29E /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				285802101A7F91620096F29E /* UdpEchoServer */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		285802101A7F91620096F29E /* UdpEchoServer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UdpEchoServer;
+			sourceTree = "<group>";
+		};
+		285802121A7F91620096F29E /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				285802131A7F91620096F29E /* AsyncSocket.h */,
+				285802141A7F91620096F29E /* AsyncSocket.m */,
+				285802151A7F91620096F29E /* AsyncUdpSocket.h */,
+				285802161A7F91620096F29E /* AsyncUdpSocket.m */,
+				285802171A7F91620096F29E /* Documentation.html */,
+				285802181A7F91620096F29E /* Xcode */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		285802181A7F91620096F29E /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				285802191A7F91620096F29E /* EchoServer */,
+				2858021A1A7F91620096F29E /* InterfaceTest */,
+				2858021C1A7F91620096F29E /* UdpEchoClient */,
+				2858021E1A7F91620096F29E /* UdpEchoServer */,
+			);
+			path = Xcode;
+			sourceTree = "<group>";
+		};
+		285802191A7F91620096F29E /* EchoServer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EchoServer;
+			sourceTree = "<group>";
+		};
+		2858021A1A7F91620096F29E /* InterfaceTest */ = {
+			isa = PBXGroup;
+			children = (
+				2858021B1A7F91620096F29E /* Classes */,
+			);
+			path = InterfaceTest;
+			sourceTree = "<group>";
+		};
+		2858021B1A7F91620096F29E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2858021C1A7F91620096F29E /* UdpEchoClient */ = {
+			isa = PBXGroup;
+			children = (
+				2858021D1A7F91620096F29E /* UdpEchoClient */,
+			);
+			path = UdpEchoClient;
+			sourceTree = "<group>";
+		};
+		2858021D1A7F91620096F29E /* UdpEchoClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UdpEchoClient;
+			sourceTree = "<group>";
+		};
+		2858021E1A7F91620096F29E /* UdpEchoServer */ = {
+			isa = PBXGroup;
+			children = (
+				2858021F1A7F91620096F29E /* UdpEchoServer */,
+			);
+			path = UdpEchoServer;
+			sourceTree = "<group>";
+		};
+		2858021F1A7F91620096F29E /* UdpEchoServer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UdpEchoServer;
+			sourceTree = "<group>";
+		};
+		285802201A7F91620096F29E /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				285802211A7F91620096F29E /* CocoaLumberjack */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		285802211A7F91620096F29E /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				285802221A7F91620096F29E /* DDAbstractDatabaseLogger.h */,
+				285802231A7F91620096F29E /* DDAbstractDatabaseLogger.m */,
+				285802241A7F91620096F29E /* DDASLLogger.h */,
+				285802251A7F91620096F29E /* DDASLLogger.m */,
+				285802261A7F91620096F29E /* DDFileLogger.h */,
+				285802271A7F91620096F29E /* DDFileLogger.m */,
+				285802281A7F91620096F29E /* DDLog+LOGV.h */,
+				285802291A7F91620096F29E /* DDLog.h */,
+				2858022A1A7F91620096F29E /* DDLog.m */,
+				2858022B1A7F91620096F29E /* DDTTYLogger.h */,
+				2858022C1A7F91620096F29E /* DDTTYLogger.m */,
+				2858022D1A7F91620096F29E /* Extensions */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		2858022D1A7F91620096F29E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2858022E1A7F91620096F29E /* DDContextFilterLogFormatter.h */,
+				2858022F1A7F91620096F29E /* DDContextFilterLogFormatter.m */,
+				285802301A7F91620096F29E /* DDDispatchQueueLogFormatter.h */,
+				285802311A7F91620096F29E /* DDDispatchQueueLogFormatter.m */,
+				285802321A7F91620096F29E /* DDMultiFormatter.h */,
+				285802331A7F91620096F29E /* DDMultiFormatter.m */,
+				285802341A7F91620096F29E /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2802C8941A7B98050027F09D /* AnymoteSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2802C8B81A7B98050027F09D /* Build configuration list for PBXNativeTarget "AnymoteSDKExample" */;
+			buildPhases = (
+				2802C8911A7B98050027F09D /* Sources */,
+				2802C8921A7B98050027F09D /* Frameworks */,
+				2802C8931A7B98050027F09D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnymoteSDKExample;
+			productName = AnymoteSDKExample;
+			productReference = 2802C8951A7B98050027F09D /* AnymoteSDKExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2802C8AD1A7B98050027F09D /* AnymoteSDKExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2802C8BB1A7B98050027F09D /* Build configuration list for PBXNativeTarget "AnymoteSDKExampleTests" */;
+			buildPhases = (
+				2802C8AA1A7B98050027F09D /* Sources */,
+				2802C8AB1A7B98050027F09D /* Frameworks */,
+				2802C8AC1A7B98050027F09D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2802C8B01A7B98050027F09D /* PBXTargetDependency */,
+			);
+			name = AnymoteSDKExampleTests;
+			productName = AnymoteSDKExampleTests;
+			productReference = 2802C8AE1A7B98050027F09D /* AnymoteSDKExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2802C88D1A7B98050027F09D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ColorTiger;
+				TargetAttributes = {
+					2802C8941A7B98050027F09D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					2802C8AD1A7B98050027F09D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 2802C8941A7B98050027F09D;
+					};
+				};
+			};
+			buildConfigurationList = 2802C8901A7B98050027F09D /* Build configuration list for PBXProject "AnymoteSDKExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2802C88C1A7B98050027F09D;
+			productRefGroup = 2802C8961A7B98050027F09D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2802C8941A7B98050027F09D /* AnymoteSDKExample */,
+				2802C8AD1A7B98050027F09D /* AnymoteSDKExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2802C8931A7B98050027F09D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285802351A7F91620096F29E /* .gitignore in Resources */,
+				285802371A7F91620096F29E /* Documentation.html in Resources */,
+				2802C8A91A7B98050027F09D /* LaunchScreen.xib in Resources */,
+				285801E61A7F8B920096F29E /* ViewController.xib in Resources */,
+				2802C8A61A7B98050027F09D /* Images.xcassets in Resources */,
+				2858023D1A7F91620096F29E /* Documentation.html in Resources */,
+				285802461A7F91620096F29E /* README.txt in Resources */,
+				285802361A7F91620096F29E /* CocoaAsyncSocket.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2802C8AC1A7B98050027F09D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2802C8911A7B98050027F09D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285802411A7F91620096F29E /* DDLog.m in Sources */,
+				285802381A7F91620096F29E /* GCDAsyncSocket.m in Sources */,
+				285802441A7F91620096F29E /* DDDispatchQueueLogFormatter.m in Sources */,
+				285802401A7F91620096F29E /* DDFileLogger.m in Sources */,
+				285802451A7F91620096F29E /* DDMultiFormatter.m in Sources */,
+				285802391A7F91620096F29E /* GCDAsyncUdpSocket.m in Sources */,
+				2858023A1A7F91620096F29E /* README.markdown in Sources */,
+				2858023C1A7F91620096F29E /* AsyncUdpSocket.m in Sources */,
+				285802421A7F91620096F29E /* DDTTYLogger.m in Sources */,
+				2858023F1A7F91620096F29E /* DDASLLogger.m in Sources */,
+				2802C8A11A7B98050027F09D /* ViewController.m in Sources */,
+				285802431A7F91620096F29E /* DDContextFilterLogFormatter.m in Sources */,
+				2858023E1A7F91620096F29E /* DDAbstractDatabaseLogger.m in Sources */,
+				2802C89E1A7B98050027F09D /* AppDelegate.m in Sources */,
+				2802C89B1A7B98050027F09D /* main.m in Sources */,
+				2858023B1A7F91620096F29E /* AsyncSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2802C8AA1A7B98050027F09D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2802C8B51A7B98050027F09D /* AnymoteSDKExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2802C8B01A7B98050027F09D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2802C8941A7B98050027F09D /* AnymoteSDKExample */;
+			targetProxy = 2802C8AF1A7B98050027F09D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2802C8A71A7B98050027F09D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2802C8A81A7B98050027F09D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2802C8B61A7B98050027F09D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2802C8B71A7B98050027F09D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2802C8B91A7B98050027F09D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AnymoteSDKExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnymoteSDKExample",
+					"$(PROJECT_DIR)/AnymoteSDKExample/anymote-sdk",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2802C8BA1A7B98050027F09D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AnymoteSDKExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnymoteSDKExample",
+					"$(PROJECT_DIR)/AnymoteSDKExample/anymote-sdk",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2802C8BC1A7B98050027F09D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AnymoteSDKExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnymoteSDKExample.app/AnymoteSDKExample";
+			};
+			name = Debug;
+		};
+		2802C8BD1A7B98050027F09D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AnymoteSDKExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnymoteSDKExample.app/AnymoteSDKExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2802C8901A7B98050027F09D /* Build configuration list for PBXProject "AnymoteSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2802C8B61A7B98050027F09D /* Debug */,
+				2802C8B71A7B98050027F09D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2802C8B81A7B98050027F09D /* Build configuration list for PBXNativeTarget "AnymoteSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2802C8B91A7B98050027F09D /* Debug */,
+				2802C8BA1A7B98050027F09D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2802C8BB1A7B98050027F09D /* Build configuration list for PBXNativeTarget "AnymoteSDKExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2802C8BC1A7B98050027F09D /* Debug */,
+				2802C8BD1A7B98050027F09D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2802C88D1A7B98050027F09D /* Project object */;
+}
