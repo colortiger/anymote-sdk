@@ -78,4 +78,4 @@ In real-life use cases you probably want to send IR commands at the press of a b
 }
 ```
 
-For a more (not yet fully) complete documentation, [have a look here](colortiger.com/anymote-doc/ios/).
+For a more (not yet fully) complete documentation, [have a look here](http://colortiger.com/anymote-doc/ios/).
