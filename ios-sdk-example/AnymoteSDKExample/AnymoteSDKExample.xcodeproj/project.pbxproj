@@ -33,7 +33,7 @@
 		285802441A7F91620096F29E /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 285802311A7F91620096F29E /* DDDispatchQueueLogFormatter.m */; };
 		285802451A7F91620096F29E /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 285802331A7F91620096F29E /* DDMultiFormatter.m */; };
 		285802461A7F91620096F29E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285802341A7F91620096F29E /* README.txt */; };
-		285802561A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 285802551A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a */; };
+		285802791A82C9BD0096F29E /* libAnymoteSDK-release-0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 285802781A82C9BD0096F29E /* libAnymoteSDK-release-0.1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +95,7 @@
 		285802321A7F91620096F29E /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
 		285802331A7F91620096F29E /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
 		285802341A7F91620096F29E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		285802551A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAnymoteSDK-release-0.1.a"; sourceTree = "<group>"; };
+		285802781A82C9BD0096F29E /* libAnymoteSDK-release-0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAnymoteSDK-release-0.1.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				285802561A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a in Frameworks */,
+				285802791A82C9BD0096F29E /* libAnymoteSDK-release-0.1.a in Frameworks */,
 				285801E81A7F912C0096F29E /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				285801DF1A7F8B6A0096F29E /* Headers */,
-				285802551A80C4DA0096F29E /* libAnymoteSDK-release-0.1.a */,
+				285802781A82C9BD0096F29E /* libAnymoteSDK-release-0.1.a */,
 			);
 			path = "anymote-sdk";
 			sourceTree = "<group>";

@@ -77,22 +77,39 @@
 #pragma mark - Logic
 
 - (void)connectToCurrentDevice {
-    if (self.device.type == AnymoteDeviceTypeAnymote) {
-        // need to authenticate on connection
-        [self.device addAuthID:nil completion:^(NSError *error) {
+    void (^runOnConnection)() = ^{
+        if (self.device.type == AnymoteDeviceTypeAnymote) {
+            // need to authenticate on connection
+            [self.device addAuthID:nil completion:^(NSError *error) {
+                if (error) {
+                    NSLog(@"error: %@",error);
+                }
+            }];
+        }
+        
+        self.stateLabel.text = @"Connected to Device";
+        self.stateLabel.textColor = [UIColor greenColor];
+        
+        self.testCodeButton.enabled = YES;
+        self.recordCodeButton.enabled = YES;
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Disconnect" style:UIBarButtonItemStyleDone target:self action:@selector(disconnectButtonTapped:)];
+
+    };
+    
+    if (self.device.connected) {
+        runOnConnection();
+    } else {
+        [self.device connectWithCompletion:^(NSError *error) {
             if (error) {
-                NSLog(@"error: %@",error);
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+                [alert show];
+                
+            } else {
+                runOnConnection();
             }
         }];
     }
-    
-    self.stateLabel.text = @"Connected to Device";
-    self.stateLabel.textColor = [UIColor greenColor];
-    
-    self.testCodeButton.enabled = YES;
-    self.recordCodeButton.enabled = YES;
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Disconnect" style:UIBarButtonItemStyleDone target:self action:@selector(disconnectButtonTapped:)];
 }
 
 #pragma mark - View Controller

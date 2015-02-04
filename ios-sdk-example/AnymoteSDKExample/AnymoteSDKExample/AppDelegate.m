@@ -15,9 +15,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
     self.manager = [AnymoteManager manager];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     ViewController *ctl = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:ctl];
